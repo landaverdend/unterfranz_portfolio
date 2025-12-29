@@ -1,3 +1,22 @@
+:root {
+  /* Primary colors */
+  --color-primary: #239e93;
+  --color-primary-dark: #084f49;
+  --color-primary-light: #b8f5e8;
+
+  /* Text colors */
+  --color-text: #333;
+  --color-text-muted: #666;
+  --color-text-light: #888;
+
+  /* Background colors */
+  --color-bg: #fafafa;
+  --color-bg-white: #fff;
+
+  /* Border colors */
+  --color-border: #e2e2e2;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -7,12 +26,12 @@
 body {
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
   line-height: 1.6;
-  color: #333;
-  background: #fafafa;
+  color: var(--color-text);
+  background: var(--color-bg);
 }
 
 a {
-  color: #2c5282;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -22,8 +41,8 @@ a:hover {
 
 /* Header */
 header {
-  background: #fff;
-  border-bottom: 1px solid #e2e2e2;
+  background: var(--color-bg-white);
+  border-bottom: 1px solid var(--color-border);
   padding: 1rem 2rem;
 }
 
@@ -40,14 +59,14 @@ header nav {
 .logo {
   font-size: 1.4rem;
   font-weight: 300;
-  color: #333;
+  color: var(--color-text);
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .logo:hover {
   text-decoration: none;
-  color: #2c5282;
+  color: var(--color-primary);
 }
 
 .nav-links {
@@ -58,7 +77,7 @@ header nav {
 }
 
 .nav-links a {
-  color: #555;
+  color: var(--color-text-muted);
   font-size: 0.95rem;
   position: relative;
   transition: color 0.3s ease;
@@ -72,12 +91,12 @@ header nav {
   left: 0;
   width: 0;
   height: 2px;
-  background: #2c5282;
+  background: var(--color-primary);
   transition: width 0.3s ease;
 }
 
 .nav-links a:hover {
-  color: #2c5282;
+  color: var(--color-primary);
   text-decoration: none;
 }
 
@@ -87,19 +106,19 @@ header nav {
 }
 
 .nav-links a.active {
-  color: #2c5282;
+  color: var(--color-primary);
   font-weight: 600;
 }
 
 .nav-links a.nav-btn {
-  background: #2c5282;
+  background: var(--color-primary);
   color: #fff;
   padding: 0.5rem 1rem;
   border-radius: 4px;
 }
 
 .nav-links a.nav-btn:hover {
-  background: #1a365d;
+  background: var(--color-primary-dark);
   color: #fff;
 }
 
@@ -123,7 +142,7 @@ header nav {
 .hamburger span {
   width: 25px;
   height: 3px;
-  background: #2c5282;
+  background: var(--color-primary);
   border-radius: 2px;
   transition: all 0.3s ease;
   transform-origin: center;
@@ -154,13 +173,13 @@ main {
 h1 {
   font-size: 2rem;
   margin-bottom: 1rem;
-  color: #2c5282;
+  color: var(--color-primary);
 }
 
 h2 {
   font-size: 1.4rem;
   margin: 2rem 0 1rem;
-  color: #444;
+  color: var(--color-text);
 }
 
 p {
@@ -169,14 +188,14 @@ p {
 
 .subtitle {
   font-size: 1.1rem;
-  color: #666;
+  color: var(--color-text-muted);
   margin-bottom: 2rem;
 }
 
 /* Buttons */
 .btn {
   display: inline-block;
-  background: #2c5282;
+  background: var(--color-primary);
   color: #fff;
   padding: 0.75rem 1.5rem;
   border-radius: 4px;
@@ -184,7 +203,7 @@ p {
 }
 
 .btn:hover {
-  background: #1a365d;
+  background: var(--color-primary-dark);
   text-decoration: none;
 }
 
@@ -219,8 +238,8 @@ li {
 /* Tags */
 .tag {
   display: inline-block;
-  background: #e8f0f7;
-  color: #2c5282;
+  background: var(--color-primary-light);
+  color: var(--color-primary);
   padding: 0.25rem 0.75rem;
   border-radius: 20px;
   font-size: 0.85rem;
@@ -232,7 +251,7 @@ li {
 }
 
 .license-tags .tag {
-  background: #2c5282;
+  background: var(--color-primary);
   color: #fff;
   font-size: 0.8rem;
 }
@@ -251,7 +270,7 @@ li {
   gap: 2rem;
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid #e2e2e2;
+  border-top: 1px solid var(--color-border);
 }
 
 .info-grid .info-section {
@@ -263,7 +282,7 @@ li {
 .info-section {
   margin-top: 2.5rem;
   padding-top: 2rem;
-  border-top: 1px solid #e2e2e2;
+  border-top: 1px solid var(--color-border);
 }
 
 .info-section h2 {
@@ -272,7 +291,7 @@ li {
 
 .note {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
   margin-top: 1rem;
 }
 
@@ -285,10 +304,10 @@ li {
 }
 
 .book-card {
-  background: #fff;
+  background: var(--color-bg-white);
   padding: 1rem;
   border-radius: 8px;
-  border: 1px solid #e2e2e2;
+  border: 1px solid var(--color-border);
 }
 
 .book-cover {
@@ -305,7 +324,7 @@ li {
 
 .book-card p {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--color-text-muted);
   margin-bottom: 0;
 }
 
@@ -313,9 +332,9 @@ li {
 footer {
   text-align: center;
   padding: 2rem;
-  color: #888;
+  color: var(--color-text-light);
   font-size: 0.9rem;
-  border-top: 1px solid #e2e2e2;
+  border-top: 1px solid var(--color-border);
 }
 
 /* Responsive */
