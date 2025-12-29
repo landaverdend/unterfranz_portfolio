@@ -695,4 +695,8 @@ footer {
   .info-grid {
     grid-template-columns: 1fr;
   }
+
+  .contact-info {
+    justify-content: center;
+  }
 }
