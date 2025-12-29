@@ -206,7 +206,52 @@ li {
 }
 
 .hero-text .subtitle {
-  margin-bottom: 0;
+  margin-bottom: 0.5rem;
+}
+
+/* Tags */
+.tag {
+  display: inline-block;
+  background: #e8f0f7;
+  color: #2c5282;
+  padding: 0.25rem 0.75rem;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  margin: 0.25rem 0.25rem 0.25rem 0;
+}
+
+.license-tags {
+  margin-top: 0.5rem;
+}
+
+.license-tags .tag {
+  background: #2c5282;
+  color: #fff;
+  font-size: 0.8rem;
+}
+
+.tag-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+}
+
+/* Info Sections */
+.info-section {
+  margin-top: 2.5rem;
+  padding-top: 2rem;
+  border-top: 1px solid #e2e2e2;
+}
+
+.info-section h2 {
+  margin-top: 0;
+}
+
+.note {
+  font-size: 0.9rem;
+  color: #666;
+  margin-top: 1rem;
 }
 
 /* Book Grid */
