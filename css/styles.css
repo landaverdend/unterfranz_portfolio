@@ -50,6 +50,9 @@ header {
   border-bottom: 1px solid var(--color-border);
   padding: 1rem 2rem;
   box-shadow: var(--shadow-sm);
+  position: sticky;
+  top: 0;
+  z-index: 100;
 }
 
 header nav {
@@ -272,6 +275,7 @@ li {
   margin: 0.25rem 0.25rem 0.25rem 0;
   font-weight: 500;
   transition: all 0.2s ease;
+  user-select: none;
 }
 
 .tag:hover {
@@ -397,6 +401,11 @@ footer {
 @media (max-width: 600px) {
   header nav {
     position: relative;
+    flex-wrap: nowrap;
+  }
+
+  .logo {
+    font-size: 1.1rem;
   }
 
   .hamburger {
@@ -404,16 +413,21 @@ footer {
   }
 
   .nav-links {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    right: 0;
     display: flex;
     flex-direction: column;
     flex-wrap: nowrap;
-    width: 100%;
+    background: var(--color-bg-white);
     text-align: center;
-    padding-top: 0;
+    padding: 0;
     gap: 0;
     max-height: 0;
     overflow: hidden;
-    transition: max-height 0.4s ease, padding 0.4s ease;
+    transition: max-height 0.4s ease, padding 0.4s ease, box-shadow 0.4s ease;
+    box-shadow: none;
   }
 
   .nav-links a {
@@ -425,7 +439,8 @@ footer {
 
   .menu-toggle:checked ~ .nav-links {
     max-height: 400px;
-    padding-top: 1rem;
+    padding: 1rem 0;
+    box-shadow: var(--shadow-lg);
   }
 
   .menu-toggle:checked ~ .nav-links a {
