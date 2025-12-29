@@ -59,14 +59,14 @@ header nav {
 .logo {
   font-size: 1.4rem;
   font-weight: 300;
-  color: var(--color-text);
+  color: var(--color-primary);
   letter-spacing: 0.05em;
   text-transform: uppercase;
 }
 
 .logo:hover {
   text-decoration: none;
-  color: var(--color-primary);
+  color: var(--color-text);
 }
 
 .nav-links {
