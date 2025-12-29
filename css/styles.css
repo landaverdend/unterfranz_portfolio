@@ -262,7 +262,9 @@ footer {
   }
 
   .nav-links {
+    display: flex;
     flex-direction: column;
+    flex-wrap: nowrap;
     width: 100%;
     text-align: center;
     padding-top: 0;
