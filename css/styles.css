@@ -604,6 +604,8 @@ li {
 }
 
 .credential-card {
+  display: flex;
+  flex-direction: column;
   background: var(--color-bg-white);
   padding: 1.5rem;
   border-radius: 12px;
@@ -637,6 +639,7 @@ li {
 
 .credential-card .btn {
   margin: 0;
+  margin-top: auto;
   padding: 0.5rem 1rem;
   font-size: 0.85rem;
 }
